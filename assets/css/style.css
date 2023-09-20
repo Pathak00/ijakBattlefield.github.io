@@ -598,6 +598,7 @@ body {
 .upcoming-item .social-link:is(:hover,
  :focus-visible) {
     color: var(--text-purple);
+    font-size: 2rem;
 }
 
 
@@ -727,11 +728,17 @@ body {
 }
 
 .social-link:hover {
-    color: #c77df9;
+    color: hsl(348.66, 75.23%, 57.25%);
     transform: translateY(-10px);
     font-size: 5rem;
     transition: ease-in-out .1s;
 }
+
+
+/* 
+.social-link .insta:hover {
+    color: hsl(348.66, 75.23%, 57.25%);
+} */
 
 .footer-list-title {
     font-size: var(--fontSize-3);
@@ -1196,7 +1203,7 @@ ul {
 }
 
 .contact-form form .block {
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
 }
 
 .contact-form form button,
@@ -1261,14 +1268,18 @@ select {
     }
     .contact-wrapper {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 4fr 1fr;
     }
     .contact-wrapper>* {
-        padding: 2em;
+        padding: 1em;
     }
     .contact-info h4,
     .contact-info ul,
     .contact-info p {
         text-align: left;
     }
+}
+
+#offer {
+    width: 20rem;
 }
